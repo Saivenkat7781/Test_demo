@@ -1,0 +1,72 @@
+Install Git in your pc
+-git --version - To check the version.
+
+-git help config - It provies the manual for commands
+-git config --help
+
+-mkdir NAME - Create a local repsitory
+-cd NAME -  To move into that directory.
+-git init - To initialize the directory.
+ 	Create a text file with in the directory. 
+	 ex:- demo "Hello Venkat"
+
+-git status - To check the status
+	Here we didn't make any commit here through git tool
+
+-git add demo.txt -  To add demo text file to current directory
+
+- git commit -m - To commit a file
+
+Now link git to Github account
+
+-git config --global user.name "Saivenkata7781"
+-git config --global user.email "saivenkata7781@gmail.com"
+
+Now Create your Github account and create a new repository
+Now copy your repo link and we need to connect our remote and local repository
+
+-git remote add origin https://github.com/Saivenkat7781/Test_demo
+
+Now our local repos and remote repo are linked so we can now push our local file to remote repo and the command for that is....
+
+-git push origin master
+
+
+Now you can check your Github, your local file will has been moved to remote repository.
+
+
+Now add some lines in your demo.txt file
+and go back to gitbash and use command
+
+-git diff - It will show you the differences
+
+
+To create a branch we use command
+-git branch BRANCH_NAME
+
+To move into that branch we use
+-git checkout BRANCH_NAME
+
+-git checkout is used to move to a certain branch.
+
+
+Create 3 txt files, lets say info1.txt, info2.txt, info3.txt
+
+Branching steps
+
+1.Create a branch
+2.Switch to new branch from master branch
+3.Create and add info.txt to first_branch
+4.Commit that file to first_branch
+5.Merge the documents into master branch
+
+Before merging we need to checkout to master and commit
+
+In the master branch we see only "demo, info1 and info2".
+
+-git merge BRANCH_NAME (To merge the branch)
+
+Now we can see all the text files.
+
+
+
